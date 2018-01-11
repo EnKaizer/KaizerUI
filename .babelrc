@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "latest",
+    "react",
+    "stage-2"
+  ],
+  "plugins": ["transform-class-properties",
+    [
+      "transform-react-remove-prop-types",
+      {
+        "mode": "wrap"
+      }
+    ]
+  ],
+  "env": {
+    "start": {
+      "presets": [
+        "react-hmre",
+        "stage-2"
+      ]
+    }
+  }
+}
